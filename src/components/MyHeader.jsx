@@ -11,8 +11,8 @@ function MyNav() {
         <Container>
           <Navbar.Brand href="#home">Anna's Meteo</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#localita">Localitá preferite</Nav.Link>
+            <Nav.Link onClick={() => onViewChange("search")}>Cerca</Nav.Link>
+            <Nav.Link onClick={() => onViewChange("favorites")}>Localitá preferite</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

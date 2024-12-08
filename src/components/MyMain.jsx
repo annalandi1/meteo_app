@@ -3,6 +3,7 @@ import React, { useState  } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import MySearch from "./MySearch";
 
+
 function MyMain() {
   const [query, setQuery] = useState(""); // Valore del campo di ricerca
   const [weatherData, setWeatherData] = useState(null); // Dati meteo
@@ -49,7 +50,7 @@ function MyMain() {
   };
 
   return (
-    <Container>
+    <Container >
       <Row className="justify-content-center mt-5">
         <Col xs={12} md={8} >
           <MySearch
@@ -59,7 +60,7 @@ function MyMain() {
           />
         </Col>
       </Row>
-      <Row className="mt-3">
+      <Row className="mainCss" >
         <Col>
           {loading && <h1>Caricamento in corso...</h1>}
           {error && <h1 className="text-danger">Errore: {error}</h1>}

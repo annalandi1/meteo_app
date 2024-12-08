@@ -3,10 +3,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+
 function MyNav() {
   return (
    
-      <Navbar bg="primary" data-bs-theme="dark">
+      <Navbar style={{backgroundColor: "#2693b7"}} data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="#home">Anna's Meteo</Navbar.Brand>
           <Nav className="me-auto">

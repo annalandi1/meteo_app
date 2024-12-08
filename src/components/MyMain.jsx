@@ -60,8 +60,12 @@ function MyMain() {
           />
         </Col>
       </Row>
-      <Row className="mainCss" >
-        <Col>
+      <Row >
+        <Col style={{margin: "30px",
+                    paddingTop: "10px",
+                    background: "lightblue",
+                    borderRadius: "30px"}}
+        >
           {loading && <h1>Caricamento in corso...</h1>}
           {error && <h1 className="text-danger">Errore: {error}</h1>}
           {weatherData && (

@@ -16,7 +16,7 @@ function MySearch ({query, onSearchChange, onSearchClick}){
         </Form.Group>
       </Col>
       <Col xs={12} md={2} >
-        <Button variant="primary" className='mt-2 mt-md-0' onClick={onSearchClick}>
+        <Button style={{backgroundColor: "#6ec5e2", border: "none"}} className='mt-2 mt-md-0' onClick={onSearchClick}>
           Cerca
         </Button>
       </Col>
